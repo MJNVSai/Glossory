@@ -8,7 +8,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "npx @11ty/eleventy --serve",
-    "build": "eleventy",
+    "build": "npm run build",
     "tailwind": "npx tailwindcss -i ./style.css -o ./_site/output.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
