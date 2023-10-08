@@ -1,0 +1,28 @@
+{
+  "name": "glossary",
+  "version": "1.0.0",
+  "homepage": "https://mjnvsai.github.io/Glossory",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "npx @11ty/eleventy --serve",
+    "build": "eleventy",
+    "tailwind": "npx tailwindcss -i ./style.css -o ./_site/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "tailwind-scrollbar": "^3.0.5",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "gh-pages": "^6.0.0",
+    "lunr": "^2.3.9",
+    "tailwindcss-scrollbar": "^0.1.0"
+  }
+}
